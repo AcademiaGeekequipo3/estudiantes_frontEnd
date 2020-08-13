@@ -102,7 +102,61 @@ section.equipo:after {
     margin-top: 15px;
     font-size: 24px;
 }
-@media (min-width: 480px) {
+
+@media (max-width: 1000px) and (min-width: 480px) {
+    section.equipo {
+        padding: 50px 0;
+        }
+        section.equipo p{
+        padding: 20px 93px 0;
+        text-align: center;
+        }
+    
+       .fortalezas-debilidades {
+            flex-direction:row;
+            padding: 50px 60px;
+            grid-gap:30px;
+        }
+        article.integrante{
+            display: flex;
+            grid-gap: 40px;
+            margin: 20px 0;
+        }
+        .info {
+            width:50%;
+        }
+        article.integrante.derecha{
+            flex-direction: row-reverse;
+    
+        }
+        article.integrante img {
+            width: 205px;
+            height: 205px;
+        }
+            article.integrante p{
+            text-align: left;
+            margin: 15px 0;
+        }
+        article.integrante h3{
+            text-align: left; 
+        }
+        .redesSociales {
+            justify-content: left;
+            font-size: 18px;
+        }
+         article.integrante.derecha h3{
+            text-align: right; 
+        }
+         article.integrante.derecha p{
+            text-align: right; 
+        }
+         .derecha  .redesSociales {
+            justify-content: flex-end;
+        }      
+
+}
+
+@media (min-width: 1000px) {
 	section.equipo {
 	padding: 50px 0;
     }
