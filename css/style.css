@@ -272,6 +272,8 @@ section.equipo:after {
 :root {
     --rojo: #ffffff;
     --fondo: #099d8d;
+    --fuente: #AAA;
+
 }
 
 * {
@@ -304,7 +306,7 @@ header .contenedor {
 header .logotipo {
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
-    color: var(--rojo);
+    color: var(--fuente);
     font-size: 40px;
 }
 
