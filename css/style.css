@@ -318,7 +318,7 @@ header nav a {
 
 header nav a:hover,
 header nav a.activo {
-    color:#fff;
+    color: var(--fuente);
 }
 
 /*--- --- imagen principal del menu  --- --- */
