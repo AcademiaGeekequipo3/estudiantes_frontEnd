@@ -272,7 +272,7 @@ section.equipo:after {
 :root {
     --rojo: #ffffff;
     --fondo: #099d8d;
-    --fuente: #AAA;
+    --fuente: #099d8d;
 
 }
 
@@ -311,7 +311,7 @@ header .logotipo {
 }
 
 header nav a {
-    color: #AAA;
+    color: #099d8d;
     text-decoration: none;
     margin-right: 20px;
 }
