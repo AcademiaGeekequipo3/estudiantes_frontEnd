@@ -19,7 +19,16 @@
 
 <body>
     <header>
-        <nav></nav>
+        <div class="contenedor">
+            <h2 class="logotipo">FrontendCoders</h2>
+            <nav>
+                <a href="" class="activo">Inicio</a>
+                <a href="">Quienes somos</a>
+                <a href="">Equipo</a>
+                <a href="">Contacto</a>
+                <a href=""></a>
+            </nav>
+        </div>
     </header>
 
     <div class="container">
@@ -35,32 +44,45 @@
                 </div>
             </div>
 
-            <section>
+            <section class="containerCont">
                 <h2 id="contacto" class="titleQS">CONTACTO</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptates provident adipisci distinctio earum, sit ullam totam nihil quas, consequatur tempora, blanditiis odit!
                 </p>
+                <p>Todos los campos marcados con * obligatorios</p>
             </section>
 
-            <section>
-                <p>
-                    Todos los campos marcados con * son obligatorios
-                </p>
-            </section>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <form role="form" id="contactForm" data-toggle="validator" class="shake">
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <label for="name" class="h4">Nombre completo *</label>
+                                <input type="text" class="form-control" id="name" placeholder="Nombre..." required data-error="NEW ERROR MESSAGE">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-sm-8">
+                                <label for="name" class="h4">Email *</label>
+                                <input type="text" class="form-control" id="name" placeholder="nombreapellidos@mail.com" required data-error="NEW ERROR MESSAGE">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="email" class="h4">Teléfono</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ej: 123456789">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="h4 ">Mensaje *</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="¿Qué necesitas?" required></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <button type="submit" id="form-submit" id="btn-enviar" class="btn col-sm-6 pull-right">Enviar</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div><br>
 
-            <form method="post" id="form" action="">
-
-                <label for="nombres">Nombre completo *</label><br>
-                <input id="nombres" type="text" placeholder="Nombres..." /><br>
-                <label for="email">Email *:</label><br>
-                <input id="email" type="text" placeholder="Email" /><br>
-                <label for="telefono">Teléfono:</label><br>
-                <input id="telefono" type="text" placeholder="Teléfono" /><br>
-                <label for="textarea">Mensaje *</label><br>
-                <textarea id="textarea" placeholder="¿Qué necesitas?">Mensaje</textarea><br>
-                <input id="enviar" type="submit" value="ENVIAR" />
-
-            </form>
+                    </form>
+                </div>
+            </div><br>
 
             <hr class="divider">
 

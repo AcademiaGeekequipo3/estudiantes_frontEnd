@@ -129,6 +129,25 @@ section.equipo:after {
     z-index: 1;
 }
 
+.containerCont {
+    width: 601px;
+    left: 25%;
+    top: 15px;
+    bottom: 30;
+    border-bottom: 0;
+    z-index: 1;
+}
+
+.row {
+    top: 20px;
+    bottom: 60px;
+}
+
+.btn {
+    background-color: #099d8d;
+    color: #ffffff;
+}
+
 .carousel-caption {
     width: 35%;
     margin: 0;
@@ -267,13 +286,13 @@ section.equipo:after {
     }
 }
 
+
 /*estilos para el navbar */
 
 :root {
     --rojo: #ffffff;
     --fondo: #099d8d;
     --fuente: #099d8d;
-
 }
 
 * {
@@ -290,7 +309,6 @@ body {
 .contenedor {
     width: 90%;
     margin: auto;
-
 }
 
 header {
@@ -321,12 +339,13 @@ header nav a.activo {
     color: var(--fuente);
 }
 
+
 /*--- --- imagen principal del menu  --- --- */
 
 .pe-principal {
     font-size: 16px;
     min-height: 40.62em;
-    color:#fff;
+    color: #fff;
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url(https://www.alianzaparacrecer.com/wp-content/uploads/2019/05/banner-35.jpg);
     background-position: center center;
     background-size: cover;
@@ -360,7 +379,7 @@ header nav a.activo {
     border: none;
     border-radius: 0.31em;
     padding: 0.93em 1.87em;
-    color:#fff;
+    color: #fff;
     margin-right: 1.25em;
     cursor: pointer;
     transition: .3s ease all;
@@ -376,12 +395,10 @@ header nav a.activo {
     margin-right: 1.25em;
 }
 
-
 .p-boton {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     text-decoration: none;
     color: initial;
 }
